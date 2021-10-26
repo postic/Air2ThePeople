@@ -1,0 +1,54 @@
+{
+  "name": "air2thepeople",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@codler/react-native-keyboard-aware-scroll-view": "^1.0.1",
+    "@react-native-community/masked-view": "0.1.6",
+    "@react-navigation/drawer": "^5.11.4",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.9.0",
+    "axios": "^0.21.0",
+    "base-64": "^1.0.0",
+    "d3": "^4.13.0",
+    "d3-scale": "^3.2.3",
+    "native-base": "^2.13.8",
+    "react": "17.0.2",
+    "react-dom": "~16.9.0",
+    "react-native": "0.65.1",
+    "react-native-axios": "^0.17.1",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-loading-spinner-overlay": "^2.0.0",
+    "react-native-maps": "^0.27.1",
+    "react-native-reanimated": "~1.7.0",
+    "react-native-safe-area-context": "0.7.3",
+    "react-native-scalable-image": "^1.0.0",
+    "react-native-screens": "2.2.0",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-svg": "^9.12.0",
+    "react-native-svg-charts": "^5.4.0",
+    "react-native-vector-icons": "^7.1.0",
+    "react-navigation": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/runtime": "7.15.3",
+    "@react-native-community/eslint-config": "2.0.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^7.32.0",
+    "jest": "^27.3.1",
+    "metro-react-native-babel-preset": "0.66.2",
+    "react-native-codegen": "^0.0.0",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
