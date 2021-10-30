@@ -4,9 +4,9 @@ workflows:
     instance_type: mac_mini
     max_build_duration: 60
     environment:
-      groups:
-        - group_name
-      flutter: stable
+#      groups:
+#        - group_name
+#      flutter: stable
       xcode: latest
     cache:
       cache_paths:
@@ -24,7 +24,7 @@ workflows:
       - npm install
       - npm update --force
 #      - cd ios && pod install
-      - xcodebuild clean build --project ios/air2thepeople.xcodeproj --scheme air2thepeople CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED="NO"
+      - xcodebuild build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 
 #      - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
 
