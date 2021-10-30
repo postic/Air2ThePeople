@@ -22,10 +22,8 @@ workflows:
     scripts:
 
       - npm install
-      - npm audit fix
-#      - npm test
-#      - cd ios && pod install
-#      - xcode-project run-tests --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople --device "iPhone 11" --clean
+      - cd ios && pod install
+      - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
 
     artifacts:
       - build/ios/ipa/*.ipa
