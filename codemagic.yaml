@@ -23,7 +23,7 @@ workflows:
 
       - npm install
 #      - cd ios && pod install
-      - xcodebuild build -project ios/air2thepeople.xcproject -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+      - xcodebuild build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 #      - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
 
     artifacts:
