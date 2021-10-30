@@ -6,7 +6,6 @@ workflows:
     environment:
       groups:
         - group_name
-      flutter: stable
       xcode: latest
     cache:
       cache_paths:
