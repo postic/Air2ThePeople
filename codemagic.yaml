@@ -22,7 +22,7 @@ workflows:
     scripts:
 
       - npm install
-      - cd ios && pod install && run-ios
+      - cd ios && pod install
       - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
 
     artifacts:
