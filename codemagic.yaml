@@ -23,6 +23,10 @@ workflows:
 
       - npm install
       - npm update --force
+
+      - cd ios
+      - pod init
+      - pod install
 #      - cd ios && pod install
       - xcodebuild build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 
