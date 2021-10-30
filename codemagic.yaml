@@ -25,6 +25,6 @@ workflows:
     publishing:
       email:
         recipients:
-          - postic.stevan@gmaail.com
+          - postic.stevan@gmail.com
       scripts:
         - echo 'Post-publish script'
