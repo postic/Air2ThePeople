@@ -20,6 +20,7 @@
     "d3": "^4.13.0",
     "d3-scale": "^3.2.3",
     "native-base": "^2.13.8",
+    "pod-install": "^0.1.28",
     "react": "17.0.2",
     "react-dom": "~16.9.0",
     "react-native": "0.65.1",
