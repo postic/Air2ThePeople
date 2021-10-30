@@ -20,8 +20,7 @@ workflows:
           source: true
       cancel_previous_builds: false
     scripts:
-      - flutter build ios --debug --no-codesign
-      - xcode-project build-ipa --project ios/air2thepeople.xcodeproj --scheme air2thepeople
+      - xcode-project run-tests --project ios/air2thepeople.xcodeproj --scheme air2thepeople --device "iPhone 11"
     artifacts:
       - build/ios/ipa/*.ipa
     publishing:
