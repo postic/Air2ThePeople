@@ -21,12 +21,8 @@ workflows:
       cancel_previous_builds: false
     scripts:
 
-      - name: Install npm dependencies
-          script: |
-            npm install
-      - name: Install CocoaPods dependencies
-          script: |
-            cd ios && pod install
+      - npm install
+      - cd ios && pod install
         #- xcode-project run-tests --project ios/air2thepeople.xcodeproj --scheme air2thepeople --device "iPhone 11"
 
     artifacts:
