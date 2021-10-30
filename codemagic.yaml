@@ -21,13 +21,14 @@ workflows:
       cancel_previous_builds: false
     scripts:
 
+      - rm -rf node_modules
       - npm install
       - npm update --force
 
       - cd ios && pod init && pod install && pod update
-      - cd ios && rm -rf build
+      - rm -rf build
 #      - cd ios && pod install
-      - xcodebuild build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+      - xcodebuild clean build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 
 #      - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
 
