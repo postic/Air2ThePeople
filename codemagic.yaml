@@ -20,7 +20,7 @@ workflows:
           source: true
       cancel_previous_builds: false
     scripts:
-      - xcode-project build-ipa --project "air2thepeople.xcodeproj" --scheme "air2thepeople"
+      - xcode-project build-ipa --project ios/air2thepeople.xcodeproj --scheme air2thepeople
     artifacts:
       - build/ios/ipa/*.ipa
     publishing:
