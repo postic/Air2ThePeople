@@ -1,7 +1,7 @@
 workflows:
   my-workflow:
     name: air2thepeople
-    instance_type: mac_mini
+    instance_type: mac_pro
     max_build_duration: 60
     environment:
 #      groups:
@@ -25,8 +25,8 @@ workflows:
       - npm install
       - npm update --force
 
-      - cd ios && pod init && pod install && pod update
-      - rm -rf build
+#      - cd ios && pod init && pod install && pod update
+#      - rm -rf build
       - cd ios && pod install
       - xcodebuild clean build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 
