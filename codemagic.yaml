@@ -7,7 +7,7 @@ workflows:
 #      groups:
 #        - group_name
 #      flutter: stable
-      xcode: 10.6.8
+      xcode: 11.0
     cache:
       cache_paths:
         - ~/.pub-cache
