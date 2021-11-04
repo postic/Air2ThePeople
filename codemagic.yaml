@@ -25,9 +25,8 @@ workflows:
       - npm install
       - npm update --force
 
-      - cd ios && pod init
-#      - rm -rf build
-      - cd ios && pod install
+      - cd ios && pod deintegrate && pod cache clean -all && pod install
+      
       - xcodebuild clean build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 #      - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
 
