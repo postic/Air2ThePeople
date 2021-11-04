@@ -7,7 +7,7 @@ workflows:
 #      groups:
 #        - group_name
 #      flutter: stable
-      xcode: 11.7
+      xcode: 11.3
     cache:
       cache_paths:
         - ~/.pub-cache
@@ -27,7 +27,7 @@ workflows:
 
       - cd ios && pod init && pod install && pod update
       - rm -rf build
-#      - cd ios && pod install
+      - cd ios && pod install
       - xcodebuild clean build -project ios/air2thepeople.xcodeproj -scheme air2thepeople CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 
 #      - xcode-project build-ipa --workspace ios/air2thepeople.xcworkspace --scheme air2thepeople
